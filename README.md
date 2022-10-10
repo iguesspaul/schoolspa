@@ -9,5 +9,11 @@ clone the repository
 
 *Step 2*
 create a .env file, and add two fields with the same value: 
-```APIKEY = '{your api key}'
-PUBLIC_APIKEY = '{the same api key}'```
+```APIKEY = '{your api key}' ```
+```PUBLIC_APIKEY = '{the same api key}'```
+
+*Step 3*
+
+Run ```bash 
+npm run dev
+```
