@@ -14,6 +14,6 @@ create a .env file, and add two fields with the same value:
 
 *Step 3*
 
-Run ```bash 
-npm run dev
-```
+Run 
+```bash 
+npm run dev```
