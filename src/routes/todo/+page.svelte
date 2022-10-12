@@ -15,6 +15,5 @@
 			{/each}
 		{/if}
 	</div>
+	<CreateTask />
 </div>
-<CreateTask />
-
