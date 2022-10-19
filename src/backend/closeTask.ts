@@ -1,5 +1,4 @@
 import { TodoistApi } from '@doist/todoist-api-typescript';
-
 export async function closeTask(id: string, apikey: any) {
 	const api = new TodoistApi(apikey);
 	await api
