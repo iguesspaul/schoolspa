@@ -3,15 +3,15 @@
 	import { isOverlayOpen } from '../backend/stores';
 </script>
 
-<div class="w-screen h-screen fixed top-0 left-0 flex justify-center items-center">
-	<div class="bg-slate-600 w-1/5 h-1/5 relative flex justify-center items-center rounded-lg">
+<div class="fixed top-0 left-0 flex items-center justify-center w-screen h-screen">
+	<div class="relative flex items-center justify-center w-1/5 rounded-lg bg-slate-600 h-1/5">
 		<button
-			class="rounded-full absolute top-0 right-0 bg-red-400 m-2 "
+			class="absolute top-0 right-0 m-2 bg-red-400 rounded-full "
 			on:click={() => isOverlayOpen.set(false)}
 		>
 			<img src={Cancel} alt="cancel" />
 		</button>
-        <div class="font-concert-one text-xl text-slate-100">
+        <div class="text-xl font-concert-one text-slate-100">
             <slot />
         </div>
 	</div>

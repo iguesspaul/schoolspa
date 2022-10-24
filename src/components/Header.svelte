@@ -15,7 +15,7 @@
 </script>
 
 <div
-	class="flex flex-row top-0 justify-between items-center w-full p-2 mb-4 border-b-2 border-gray-800"
+	class="top-0 flex flex-row items-center justify-between w-full p-2 mb-4 border-b-2 border-gray-800"
 >
 	<button>
 		<img
