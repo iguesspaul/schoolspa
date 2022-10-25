@@ -18,10 +18,12 @@
 </script>
 
 <div class="flex flex-row justify-between">
-	<div class="flex flex-row w-1/3 mx-3 mb-4 bg-gray-600 rounded-lg hover:bg-gray-800">
+	<div
+		class="flex flex-row w-1/3 h-16 mx-3 mb-4 delay-75 rounded-lg bg-slate-600 hover:bg-slate-700 shadow-clay"
+	>
 		<button
 			on:click={changeShow}
-			class="w-5/6 my-2 text-center border-r-2 text-stone-100 hover:text-stone-200 font-concert-one border-r-slate-300"
+			class="w-5/6 my-2 text-xl text-center border-r-2 text-stone-100 hover:text-stone-200 font-concert-one border-r-slate-300"
 		>
 			{data.content}
 		</button>
@@ -31,13 +33,15 @@
 			}}
 			class="flex items-center justify-center w-1/6"
 		>
-			<img class="bg-gray-500 rounded-full" src={Check} alt="close task" />
+			<img class="rounded-full bg-slate-600 shadow-clay" src={Check} alt="close task" />
 		</button>
 	</div>
 	{#if show === true}
-		<div class="w-1/2 mx-3 mb-1 bg-gray-700 rounded-lg">
-			<h1 class="text-center font-concert-one text-stone-100">Description: {data.description}</h1>
-			<h1 class="text-center font-concert-one text-stone-100">Priority: {data.priority}</h1>
+		<div class="w-1/2 mx-3 mb-1 rounded-lg bg-slate-700 shadow-clay">
+			<h1 class="text-xl text-center font-concert-one text-stone-100">
+				Description: {data.description}
+			</h1>
+			<h1 class="text-xl text-center font-concert-one text-stone-100">Priority: {data.priority}</h1>
 		</div>
 	{/if}
 </div>
