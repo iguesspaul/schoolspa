@@ -38,7 +38,7 @@
 	</div>
 	{#if show === true}
 		<div class="w-1/2 mx-3 mb-1 rounded-lg bg-slate-200 shadow-sm p-3 animate__animated animate__bounce ">
-			<h1 class="text-xl text-center font-concert-one text-gray-700">
+			<h1 class="text-xl text-center font-concert-one text-zinc-800">
 				Description: {data.description}
 			</h1>
 			<h1 class="text-xl text-center font-concert-one text-zinc-800">Priority: {data.priority}</h1>
