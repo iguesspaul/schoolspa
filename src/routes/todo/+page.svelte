@@ -13,16 +13,13 @@
 	</Overlay>
 {/if}
 
-{#if data.length === 0}
-	<div class="flex items-center justify-center">
+<div class="flex flex-col items-center justify-center h-full">
+	{#if data.length === 0}
 		<p class="text-2xl">Would you look at that!</p>
-	</div>
-{:else}
-	<div class="flex flex-col items-center justify-center h-full">
+	{:else}
 		{#each data.res as task}
 			<ToDoItem data={task} />
 		{/each}
-	</div>
-{/if}
-
-<CreateTask />
+	{/if}
+	<CreateTask />
+</div>

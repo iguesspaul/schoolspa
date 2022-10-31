@@ -7,7 +7,7 @@
 
 </script>
 
-<header class="absolute top-0 flex flex-col w-full">
+<header class="flex flex-col w-full">
 	{#if $isHeaderOpen}
 		<header
 			transition:slide="{{delay: 90, duration: 400, easing: quintOut }}"
@@ -23,7 +23,7 @@
 		</header>
 	{/if}
 	<button
-		class="flex justify-center mt-2"
+		class="flex justify-center mt-1"
 		on:click={() => {
 			isHeaderOpen.set(!$isHeaderOpen);
 		}}
