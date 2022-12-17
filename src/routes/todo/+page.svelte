@@ -1,10 +1,10 @@
 <script lang="ts">
-	/** @type {import('./$types').PageData} */
-	export let data: any;
 	import { isOverlayOpen } from '../../backend/stores';
 	import Overlay from '../../components/Overlay.svelte';
 	import ToDoItem from './ToDoItem.svelte';
 	import CreateTask from './CreateTask.svelte';
+	import type { PageData } from './$types';
+	export let data: PageData;
 </script>
 
 {#if $isOverlayOpen}
@@ -14,12 +14,10 @@
 {/if}
 
 <div class="flex flex-col items-center justify-center h-full">
-	{#if data.length === 0}
-		<p class="text-2xl">Would you look at that!</p>
+	{#each data.res as task}
+		<ToDoItem {task} />
 	{:else}
-		{#each data.res as task}
-			<ToDoItem data={task} />
-		{/each}
-	{/if}
+		<p class="text-xl font-concert-one">Looks like we're done for the day!</p>
+	{/each}
 	<CreateTask />
 </div>
