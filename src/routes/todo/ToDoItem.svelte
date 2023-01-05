@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { closeTask } from '../../backend/closeTask';
+	import { closeTask } from '$lib/closeTask';
 	import { invalidateAll } from '$app/navigation';
 	import { PUBLIC_APIKEY } from '$env/static/public';
 	export let task: any;

@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import Header from '../components/Header.svelte';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />

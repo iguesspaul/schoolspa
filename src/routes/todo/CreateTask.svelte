@@ -1,6 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
-	import { isOverlayOpen } from '../../backend/stores';
+	import { isOverlayOpen } from '$lib/stores';
 </script>
 
 <button

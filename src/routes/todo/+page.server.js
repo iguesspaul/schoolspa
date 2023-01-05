@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { getTasks } from '../../backend/getTasks';
+import { getTasks } from '$lib/getTasks';
 import { APIKEY } from '$env/static/private';
 
 /** @type {import('./$types').PageServerLoad} */

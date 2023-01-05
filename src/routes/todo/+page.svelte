@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { isOverlayOpen } from '../../backend/stores';
-	import Overlay from '../../components/Overlay.svelte';
+	import { isOverlayOpen } from '$lib/stores';
+	import Overlay from '$lib/components/Overlay.svelte';
 	import ToDoItem from './ToDoItem.svelte';
 	import CreateTask from './CreateTask.svelte';
 	import type { PageData } from './$types';

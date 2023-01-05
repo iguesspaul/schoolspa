@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { isHeaderOpen } from '../backend/stores';
+	import { isHeaderOpen } from '$lib/stores';
 	
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';

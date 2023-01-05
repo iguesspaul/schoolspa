@@ -10,7 +10,8 @@ const config = {
 	  ],
 	kit: {
 		adapter: adapter()
-	}
+	},
+	lib: "src/lib",
 };
 
 export default config;
